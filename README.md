@@ -44,12 +44,12 @@ Install the required packages with:
 
 ```bash
 pip install torch gym numpy matplotlib tensorboard tqdm
-
+```
 
 ## Usage
 
 Clone the repository and navigate to the project directory:
-
 ```bash
 git clone https://github.com/yourusername/dqn-gridworld.git
 cd dqn-gridworld
+```
