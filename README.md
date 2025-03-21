@@ -53,3 +53,31 @@ Clone the repository and navigate to the project directory:
 git clone https://github.com/yourusername/dqn-gridworld.git
 cd dqn-gridworld
 ```
+
+Run the training script with default parameters:
+```bash
+python dqn_training.py
+```
+
+### Command-Line Arguments
+
+- `--grid_size`: Size of the grid environment (default: 4)
+- `--gamma`: Discount factor (default: 0.9)
+- `--episodes`: Number of training episodes (default: 20)
+- `--batch_size`: Batch size for optimization (default: 32)
+- `--memory_capacity`: Capacity of the replay buffer (default: 10000)
+- `--hidden_size`: Hidden layer size in the Q-network (default: 128)
+- `--learning_rate`: Learning rate for AdamW optimizer (default: 1e-4)
+- `--max_steps`: Maximum steps per episode (default: 2000)
+- `--tau`: Soft update coefficient for the target network (default: 0.005)
+- `--output_dir`: Directory to save the training performance figure (default: current directory)
+- `--log_dir`: Directory to store TensorBoard logs (default: `./runs`)
+
+### Monitoring Training with TensorBoard
+
+After starting the training script, launch TensorBoard to monitor training metrics:
+
+```bash
+tensorboard --logdir=./runs
+
+
