@@ -79,5 +79,5 @@ After starting the training script, launch TensorBoard to monitor training metri
 
 ```bash
 tensorboard --logdir=./runs
-
+```
 
